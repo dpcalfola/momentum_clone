@@ -1,7 +1,15 @@
 * {
+  margin: 0px;
+  padding: 0px;
+  font-family: "arial";
   background-color: bisque;
 }
 
-h1 {
-  font-family: "Courier New", Courier, monospace;
+.hidden {
+  display: none;
+}
+
+.greeting {
+  font-size: 20px;
+  color: steelblue;
 }
