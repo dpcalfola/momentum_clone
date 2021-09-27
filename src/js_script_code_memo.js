@@ -37,3 +37,7 @@ loginGreeting.innerText = `Wellcome ${userName} !!`;
 //
 //
 //
+
+localStorage.setItem("userName", "Fola");
+localStorage.getItem("userName");
+localStorage.removeItem("userName");
