@@ -29,4 +29,4 @@ if (savedUserName === null) {
   paintLoginGreeting(savedUserName);
 }
 
-console.log(document);
+// console.log(document);

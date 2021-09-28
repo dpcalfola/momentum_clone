@@ -38,6 +38,42 @@ loginGreeting.innerText = `Wellcome ${userName} !!`;
 //
 //
 
+// ========????  code : how to use localStorage  ????==========
 localStorage.setItem("userName", "Fola");
 localStorage.getItem("userName");
 localStorage.removeItem("userName");
+//
+//
+//
+//
+
+// ========????  code : inverval and timeout  ????==========
+function intervalSayHello() {
+  console.log("hello : every 3second");
+}
+
+function timeoutSayHello() {
+  console.log("hello : after 1second at once");
+}
+
+setInterval(intervalSayHello, 3000); // 3000 ->> 3000ms == 3sec
+setTimeout(timeoutSayHello, 1000);
+//
+//
+//
+
+//// ========????  code : .padStart , .padEnd ????==========
+
+function getClock() {
+  const date = new Date();
+  const hours = String(date.getHours()).padStart(2, "0");
+  // <- 2:min chracter(String), if chracter is less than 2, function will fill "0"
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
+  clock.innerText = `${hours}:${minutes}:${seconds}`;
+}
+
+getClock();
+setInterval(getClock, 1000);
+
+//
